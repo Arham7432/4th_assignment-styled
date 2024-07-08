@@ -1,0 +1,151 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Student Registration and Enrollment</title>
+    <link rel="shortcut icon" href="img/logo.ico" type="image/x-icon">
+    <link rel="stylesheet" href="external.css">
+</head>
+
+<body>
+    <h1><img src="img/logo.png" alt="school logo">Student's Registration Form</h1>
+    <form>
+        <div class="form-group">
+            <label for="firstname">First Name:</label>
+            <input type="text" id="firstname" name="firstname" placeholder="First Name" maxlength="30" required>
+        </div>
+        <div class="form-group">
+            <label for="lastname">Last Name:</label>
+            <input type="text" id="lastname" name="lastname" placeholder="Last Name" maxlength="30" required>
+        </div>
+        <div class="form-group">
+            <h3>Date of Birth:</h3>
+            <div class="inline">
+                <label for="year">Year:</label>
+                <select name="year" id="year" required>
+                    <option hidden value="YEAR">Year</option>
+                    <!-- Add other years as needed -->
+                    <option value="1995">1995</option>
+                    <option value="1996">1996</option>
+                    <option value="2024">2024</option>
+                </select>
+                <label for="day">Day:</label>
+                <select name="day" id="day" required>
+                    <option hidden>Date</option>
+                    <option value="1">1</option>
+                    <option value="2">2</option>
+                    <option value="31">31</option>
+                </select>
+                <label for="month">Month:</label>
+                <select name="month" id="month" required>
+                    <option hidden>Month</option>
+                    <option value="1">January</option>
+                    <option value="2">February</option>
+                    <option value="12">December</option>
+                </select>
+            </div>
+        </div>
+        <div class="form-group">
+            <label for="email">Email:</label>
+            <input type="email" id="email" name="email" placeholder="Email" required>
+        </div>
+        <div class="form-group">
+            <label for="phone">Mobile Number:</label>
+            <input type="text" id="phone" name="phone" maxlength="10" placeholder="03******" required>
+        </div>
+        <div class="form-group">
+            <h3>Gender:</h3>
+            <label><input type="radio" name="gender" value="male" required> Male</label>
+            <label><input type="radio" name="gender" value="female" required> Female</label>
+        </div>
+        <div class="form-group">
+            <label for="address">Address:</label>
+            <textarea name="address" id="address" rows="4" required></textarea>
+        </div>
+        <div class="form-group">
+            <label for="city">City:</label>
+            <input type="text" id="city" name="city" maxlength="30" placeholder="City" required>
+        </div>
+        <div class="form-group">
+            <label for="pincode">PIN Code:</label>
+            <input type="text" id="pincode" name="pincode" maxlength="6" placeholder="PIN Code" required>
+        </div>
+        <div class="form-group">
+            <label for="state">State:</label>
+            <input type="text" id="state" name="state" maxlength="30" placeholder="State" required>
+        </div>
+        <div class="form-group">
+            <label for="country">Country:</label>
+            <input type="text" id="country" name="country" maxlength="30" placeholder="Country" required>
+        </div>
+        <div class="form-group">
+            <h3>Hobbies:</h3>
+            <label><input type="checkbox" name="hobbies" value="drawing"> Drawing</label>
+            <label><input type="checkbox" name="hobbies" value="singing"> Singing</label>
+            <label><input type="checkbox" name="hobbies" value="sketching"> Sketching</label>
+            <label><input type="checkbox" name="hobbies" value="dancing"> Dancing</label>
+            <label><input type="checkbox" name="hobbies" value="other"> Other
+                <input type="text" name="other_hobby" placeholder="Specify other hobby">
+            </label>
+        </div>
+        <div class="form-group">
+            <h3>Qualification:</h3>
+            <table>
+                <thead>
+                    <tr>
+                        <th>S.NO</th>
+                        <th>Examination</th>
+                        <th>Board</th>
+                        <th>Percentage</th>
+                        <th>Year of Passing</th>
+                    </tr>
+                </thead>
+                <tbody>
+                    <tr>
+                        <td>1</td>
+                        <td>Class X</td>
+                        <td><input type="text" maxlength="10"></td>
+                        <td><input type="number" max="100" min="0"></td>
+                        <td><input type="number" min="1900" max="2024"></td>
+                    </tr>
+                    <tr>
+                        <td>2</td>
+                        <td>Class XII</td>
+                        <td><input type="text" maxlength="10"></td>
+                        <td><input type="number" max="100" min="0"></td>
+                        <td><input type="number" min="1900" max="2024"></td>
+                    </tr>
+                    <tr>
+                        <td>3</td>
+                        <td>Graduation</td>
+                        <td><input type="text" maxlength="10"></td>
+                        <td><input type="number" max="100" min="0"></td>
+                        <td><input type="number" min="1900" max="2024"></td>
+                    </tr>
+                    <tr>
+                        <td>4</td>
+                        <td>Master</td>
+                        <td><input type="text" maxlength="10"></td>
+                        <td><input type="number" max="100" min="0"></td>
+                        <td><input type="number" min="1900" max="2024"></td>
+                    </tr>
+                </tbody>
+            </table>
+        </div>
+        <div class="form-group">
+            <h3>Courses Applied For:</h3>
+            <label><input type="radio" name="course" value="bca" required> B.CA</label>
+            <label><input type="radio" name="course" value="bcom" required> B.Com</label>
+            <label><input type="radio" name="course" value="bsc" required> B.Sc</label>
+            <label><input type="radio" name="course" value="ba" required> B.A</label>
+        </div>
+        <div class="form-actions">
+            <input type="submit" value="Submit">
+            <input type="reset" value="Reset">
+        </div>
+    </form>
+</body>
+
+</html>

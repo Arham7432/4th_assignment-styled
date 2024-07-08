@@ -1,0 +1,193 @@
+@import url('https://fonts.googleapis.com/css2?family=Jost:ital,wght@0,100..900;1,100..900&display=swap');
+
+/* Scrollbar styles for webkit browsers (Chrome, Safari) */
+::-webkit-scrollbar {
+    width: 12px;
+    border: 3px solid black;
+}
+
+::-webkit-scrollbar-track {
+    background: #f1f1f1;
+}
+
+::-webkit-scrollbar-thumb {
+    background-color: #fd0;
+    border-radius: 10px;
+    border: 3px solid black;
+}
+
+::-webkit-scrollbar-thumb:hover {
+    background: #fd0;
+}
+
+/* Scrollbar styles for Firefox */
+* {
+    scrollbar-width: thin;
+    scrollbar-color: #fd0 #f1f1f1;
+    font-family: "Jost", sans-serif;
+    font-optical-sizing: auto;
+    font-style: normal;
+}
+
+*::-webkit-scrollbar-track {
+    background-color: #f1f1f1;
+}
+
+*::-webkit-scrollbar-thumb {
+    background-color: #fd0;
+    border-radius: 10px;
+    border: 3px solid black;
+}
+
+*::-webkit-scrollbar-thumb:hover {
+    background-color: #fd0;
+}
+
+body {
+    font-family: "Jost", sans-serif;
+    font-optical-sizing: auto;
+    font-style: normal;
+    background-color: #faf8f0;
+    margin: 0;
+    padding: 20px;
+    color: #333;
+}
+
+h1,
+h2,
+h3,
+h4,
+p {
+    margin: 0 0 15px;
+}
+
+h1 {
+    font-size: 2em;
+    color: black;
+    text-decoration: underline;
+    text-decoration-color: #6e6e6e;
+    text-align: center;
+}
+
+img {
+    width: 84px;
+    vertical-align: middle;
+}
+
+form {
+    background-color: #fff;
+    max-width: 800px;
+    margin: 0 auto;
+    padding: 20px;
+    border-radius: 8px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+}
+
+input[type="checkbox"],
+input[type="radio"] {
+    accent-color: #f7d046;
+}
+
+label {
+    display: block;
+    margin-bottom: 5px;
+    font-weight: 500;
+}
+
+input,
+select,
+textarea {
+    width: calc(100% - 20px);
+    padding: 8px 10px;
+    margin-bottom: 15px;
+    border: 1px solid #ccc;
+    border-radius: 4px;
+    font-size: 1em;
+    box-sizing: border-box;
+}
+
+input[type="radio"],
+input[type="checkbox"] {
+    width: auto;
+    margin-right: 5px;
+}
+
+.form-group {
+    margin-bottom: 15px;
+}
+
+.form-group.inline {
+    display: flex;
+    align-items: center;
+}
+
+.form-group.inline label {
+    margin: 0 10px 0 0;
+}
+
+.form-group.inline input,
+.form-group.inline select {
+    margin-right: 15px;
+}
+
+table {
+    width: 100%;
+    border-collapse: collapse;
+    margin-bottom: 15px;
+}
+
+table,
+th,
+td {
+    border: 1px solid #ccc;
+}
+
+th,
+td {
+    padding: 8px;
+    text-align: left;
+}
+
+th {
+    background-color: #f8f9fa;
+}
+
+.form-actions {
+    text-align: center;
+}
+
+.form-actions input {
+    width: auto;
+    padding: 10px 20px;
+    margin: 0 5px;
+    border: none;
+    border-radius: 4px;
+    cursor: pointer;
+}
+
+.form-actions input[type="submit"] {
+    background-color: #fd0;
+    color: #222;
+    font-weight: 600;
+    border-radius: 30px;
+}
+
+.form-actions input[type="submit"]:hover {
+    cursor: pointer;
+    transform: scale(1.06);
+}
+
+.form-actions input[type="reset"] {
+    background-color: #6c757d;
+    color: #fff;
+    border-radius: 30px;
+}
+
+.form-actions input:hover {
+    opacity: 0.9;
+}
+
+.form-header img {
+    width: 50px;
+    vertical-align: middle;
+}
